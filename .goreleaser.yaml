@@ -14,4 +14,4 @@ builds:
       - -s -w
       - -X main.version={{.Version}}
       - -X main.commitSHA={{.FullCommit}}
-      - -X main.commitDate={{.CommitDate}}
+      - -X main.buildDate={{.Date}}

@@ -7,9 +7,9 @@ import (
 )
 
 var (
-	version    = "dev"
-	commitSHA  = "none"
-	commitDate = "unknown"
+	version   = "dev"
+	commitSHA = "none"
+	buildDate = "unknown"
 )
 
 func main() {
@@ -18,7 +18,7 @@ func main() {
 	fmt.Println(strings.Repeat("-", 30))
 	fmt.Printf("* version:\t%s\n", version)
 	fmt.Printf("* commit:\t%s\n", commitSHA)
-	fmt.Printf("* build date:\t%s\n", commitDate)
+	fmt.Printf("* build date:\t%s\n", buildDate)
 	buildInfo, ok := debug.ReadBuildInfo()
 	if !ok {
 		return
