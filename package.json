@@ -1,4 +1,6 @@
 {
+  "name": "vvc-charts",
+  "version": "1.0.0",
   "devDependencies": {
     "semantic-release": "^23.0.0"
   }
