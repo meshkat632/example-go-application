@@ -10,6 +10,10 @@ jobs:
       contents: write
     steps:
       - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '20.8'  # Specify the Node.js version you want to use
       - name: Install dependencies
         run: npm install
       - name: Run semantic-release
