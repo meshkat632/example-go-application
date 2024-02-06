@@ -9,3 +9,6 @@ The binaries can be downloaded directly from the release page or via [get-releas
 curl -SL "https://get-release.xyz/go-semantic-release/example-go-application/$(go env GOOS)/$(go env GOARCH)" -o ./example-go-application.tar.gz
 tar -xzf ./example-go-application.tar.gz
 ```
+
+
+test 
