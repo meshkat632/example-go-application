@@ -2,9 +2,11 @@ plugins:
   - "@semantic-release/commit-analyzer"
   - "@semantic-release/release-notes-generator"
   - - "@semantic-release/exec"
-    - verifyReleaseCmd: 'echo "NEXT_VERSION=${nextRelease.version}" >> build.env'
-      publishCmd: "echo 'prepareCmd ${nextRelease.version}'"
-      prepareCmd: "echo 'prepareCmd ${nextRelease.version}'"
+    - verifyConditions: "./verify.sh"
+      prepareCmd: "echo 'prepareCmd'"
+      publishCmd: "echo 'publishCmd'"
+      successCmd: "echo 'successCmd'"
+      failCmd: "echo 'failCmd'"
     #- verifyReleaseCmd: 'mvn versions:set -DnewVersion="${nextRelease.version}" && echo "NEXT_VERSION=${nextRelease.version}" >> build.env'
   - "@semantic-release/github"
   - -  "@semantic-release/git"
