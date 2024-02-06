@@ -14,3 +14,4 @@ tar -xzf ./example-go-application.tar.gz
 test 
 test 2
 test 3
+test 4
