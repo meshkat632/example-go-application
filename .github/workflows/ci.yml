@@ -2,10 +2,10 @@ name: CI
 on:
   push:
     branches:
-      - '**'
+      - 'bumlux'
   pull_request:
     branches:
-      - '**'
+      - 'bumlux'
 jobs:
   lint:
     runs-on: ubuntu-latest
