@@ -3,5 +3,14 @@
   "version": "1.0.0",
   "devDependencies": {
     "semantic-release": "^23.0.0"
+  },
+  "semantic-release": {
+    "plugins": [
+      "@semantic-release/commit-analyzer",
+      "@semantic-release/release-notes-generator",
+      "@semantic-release/changelog",
+      "@semantic-release/npm",
+      "@semantic-release/git"
+    ]
   }
 }
